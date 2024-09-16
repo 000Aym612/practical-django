@@ -31,12 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.admin',         # 管理者画面を持つアプリケーション
+    'django.contrib.auth',          # 認証システムを持つアプリケーション
+    'django.contrib.contenttypes',  # Content-Type　フレームワークに関する機能を持つアプリケーション
+    'django.contrib.sessions',      # セッション管理の機能を持つアプリケーション
+    'django.contrib.messages',      # フラッシュメッセージ機能を持つアプリケーション
+    'django.contrib.staticfiles',   # 静的ファイル（CSS/JS）に関連する機能を持つアプリケーション
+    'snippets.apps.SnippetsConfig', # snippetsアプリケーション
 ]
 
 MIDDLEWARE = [
